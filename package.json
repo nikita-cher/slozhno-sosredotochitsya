@@ -1,0 +1,22 @@
+{
+  "name": "slozhno-sosredotochitsya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "check": "prettier --check './**/*.{html,css}'",
+    "format": "prettier --write './**/*.{html,css}'",
+    "lint": "stylelint \"**/*.css\"",
+    "lintfix": "stylelint \"**/*.css\" --fix",
+    "checkAll": "npm run check & npm run lint",
+    "fixAll": "npm run format & npm run lintfix",
+    "push": "git add -A & git commit & git push",
+    "fixAndPush": "npm run fixAll & npm run push"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "stylelint": "^16.5.0"
+  }
+}
