@@ -5,4 +5,37 @@
 
 :root {
   /* переменные темной темы */
+
+  /* setup 👇🏻 */
+
+  --page-padding: clamp(10px, 2.6vi, 20px);
+  --normal-text: 400;
+  --bold-text: 700;
+  --page-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vi, 7.5rem);
+  --page-title-line-height: 0.825;
+  --page-title-shadow-color: #FF0070;
+
+  /* setup 👆🏻 */
+
+  /* layout 👇🏻 */
+
+  --page-gap: 40px;
+  --button-gap: 10px;
+  --content-gap: 50px;
+  --section-gap: 20px;
+  --article-list-gap: 20px;
+  --article-gap: 10px;
+
+  /* layout 👆🏻 */
+
+  /* theme 👇🏻 */
+
+  --page-background: #000028 url('../images/cover-image-dark.png');
+  --accent-color: #FF0070;
+  --button-effect-color: rgb(255 0 112 / .4);
+  --page-title-color: #DB00FF;
+  --article-title-font-color: #000028;
+  --content-text-color: #F1B2CE;
+
+  /* theme 👆🏻 */
 }
