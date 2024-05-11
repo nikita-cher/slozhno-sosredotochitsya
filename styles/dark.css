@@ -1,17 +1,24 @@
-/*
-  специально для темной темы при наличии класса
-  стили, которые переопределяются принудительно при переключении темы
-*/
+@media (prefers-color-scheme: dark) {
 
-:root.theme-dark {
-  /* продублированные переменные для темной темы */
+  :root {
+    --page-bg: #000028 url('../images/cover-image-dark.png');
+    --accent-color: #FF0070;
+    --button-effect-color: rgb(255 0 112 / .4);
+    --page-title-color: #DB00FF;
+    --title-decor-bg-color: var(--accent-color);
+    --title-decor-font-color: #000028;
+    --content-text-color: #F1B2CE;
+    --content-link-shadow-color: var(--accent-color);
+  }
 }
 
-/* остальные стили */
-
 .page.theme_dark {
-  /* сохранять этот селектор в приведенном виде
-    так стили, написанные ниже, будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+    --page-bg: #000028 url('../images/cover-image-dark.png');
+    --accent-color: #FF0070;
+    --button-effect-color: rgb(255 0 112 / .4);
+    --page-title-color: #DB00FF;
+    --title-decor-bg-color: var(--accent-color);
+    --title-decor-font-color: #000028;
+    --content-text-color: #F1B2CE;
+    --content-link-shadow-color: var(--accent-color);
 }

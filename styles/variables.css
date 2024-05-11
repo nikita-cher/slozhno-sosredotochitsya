@@ -1,11 +1,10 @@
 /*
-  переменные для проекта
-  и их переопределение под размеры экрана
+  переменные для темы, сверстанной первой (темная)
 */
 
-:root {
-  /* переменные темной темы */
+/* mobile 👇🏻 */
 
+:root {
   /* setup 👇🏻 */
 
   --page-padding: clamp(10px, 2.6vi, 20px);
@@ -15,8 +14,6 @@
   --page-title-line-height: 0.825;
   --page-title-shadow-color: #FF0070;
 
-  /* setup 👆🏻 */
-
   /* layout 👇🏻 */
 
   --page-gap: 40px;
@@ -25,16 +22,37 @@
   --article-list-gap: 20px;
   --article-gap: 10px;
 
-  /* layout 👆🏻 */
 
   /* theme 👇🏻 */
 
-  --page-background: #000028 url('../images/cover-image-dark.png');
+  --page-bg: #000028 url('../images/cover-image-dark.png');
   --accent-color: #FF0070;
   --button-effect-color: rgb(255 0 112 / .4);
   --page-title-color: #DB00FF;
-  --article-title-font-color: #000028;
+  --title-decor-bg-color: var(--accent-color);
+  --title-decor-font-color: #000028;
   --content-text-color: #F1B2CE;
+  --content-link-shadow-color: var(--accent-color);
+}
 
-  /* theme 👆🏻 */
+/* tablet 👇🏻 */
+
+@media (768px <= width < 1024px) {
+
+  :root {
+    --page-title-font-size: 120px;
+    --page-gap: 60px;
+    --content-gap: 80px;
+  }
+}
+
+/* desktop 👇🏻 */
+
+@media (1024px <= width) {
+  
+  :root {
+    --page-title-font-size: 157px;
+    --page-gap: 60px;
+    --content-gap: 80px;
+  }
 }

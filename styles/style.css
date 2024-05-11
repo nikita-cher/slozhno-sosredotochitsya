@@ -1,6 +1,6 @@
 /*
   основные стили
-  тема, сверстанная первой
+  тема, сверстанная первой (темная)
 */
 
 /* mobile 👇🏻 */
@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--page-gap);
-  background: var(--page-background) center / cover;
+  background: var(--page-bg) center / cover;
   background-attachment: fixed;
   font-weight: var(--normal-text);
 }
@@ -61,7 +61,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--accent-color);
+  color: #FF0070;
 }
 
 .header__decorative-item:before {
@@ -107,6 +107,7 @@
 }
 
 @media (hover:hover) {
+
   .header__theme-menu-button:hover {
    border-color: var(--button-effect-color);
   }
@@ -123,6 +124,7 @@
 }
 
 @media (hover:hover) {
+
   .header__theme-menu-button_active:hover {
     border-color: currentColor;
   }
@@ -144,8 +146,8 @@
 }
 
 .title-decor {
-  background: var(--accent-color);
-  color: var(--article-title-font-color);
+  background: var(--title-decor-bg-color);
+  color: var(--title-decor-font-color);
 }
 
 /* header 👆🏻 */
@@ -203,10 +205,11 @@
   border: 1px solid transparent;
   line-height: 1.1;
   text-decoration: none;
-  text-shadow: 2px 1px 0px var(--accent-color);
+  text-shadow: 2px 1px 0px var(--content-link-shadow-color);
 }
 
 @media (hover:hover) {
+
   .content__section-article-descriprion-link:hover {
     border-block-end-color: var(--content-text-color);
   }
@@ -285,11 +288,6 @@
 /* tablet 👇🏻 */
 
 @media (768px <= width < 1024px) {
-  :root {
-    --page-title-font-size: 120px;
-    --page-gap: 60px;
-    --content-gap: 80px;
-  }
 
   .header__title {
     transform: translateX(calc(var(--page-padding) * -1));
@@ -365,12 +363,7 @@
 /* desktop 👇🏻 */
 
 @media (1024px <= width) {
-  :root {
-    --page-gap: 60px;
-    --page-title-font-size: 157px;
-    --content-gap: 80px;
-  }
-
+  
   .header__theme-menu {
     justify-self: center;
     align-self: start;

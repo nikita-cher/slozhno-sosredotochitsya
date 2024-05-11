@@ -1,25 +1,32 @@
-/*
-  специально для светлой темы при наличии класса
-  стили, которые переопределяются принудительно при переключении темы
-*/
-
-:root.theme-light {
-  /* переменные светлой темы */
-}
-
-/* остальные стили */
-
 @media (prefers-color-scheme: light) {
+
   :root {
-    /* продублированные переменные для светлой темы */
+    --page-bg: #FFF1F7 url('../images/cover-image-light.png');
+    --accent-color: #353430;
+    --button-effect-color: rgb(50 49 45 / .4);
+    --page-title-color: #FFC2E6;
+    --title-decor-bg-color: #FF8DCB;
+    --title-decor-font-color: var(--accent-color);
+    --content-text-color: var(--accent-color);
+    --content-link-shadow-color: var(--title-decor-bg-color);
+  }
+
+  .page.theme_auto .header__decorative-item {
+    display: none;
   }
 }
 
-/* остальные стили */
-
 .page.theme_light {
-  /* сохранять этот селектор в приведенном виде
-    так стили, написанные ниже, будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --page-bg: #FFF1F7 url('../images/cover-image-light.png');
+  --accent-color: #353430;
+  --button-effect-color: rgb(50 49 45 / .4);
+  --page-title-color: #FFC2E6;
+  --title-decor-bg-color: #FF8DCB;
+  --title-decor-font-color: var(--accent-color);
+  --content-text-color: var(--accent-color);
+  --content-link-shadow-color: var(--title-decor-bg-color);
+}
+
+.page.theme_light .header__decorative-item {
+  display: none;
 }
