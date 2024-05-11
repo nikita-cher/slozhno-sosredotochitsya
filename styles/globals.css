@@ -38,3 +38,12 @@ a {
   line-height: inherit;
   text-transform: inherit;
 }
+
+@media screen and (prefers-reduced-motion) {
+  
+  *,
+  *::before,
+  *::after {
+    transition: .5s;
+  }
+}

@@ -16,6 +16,7 @@
 
   /* layout 👇🏻 */
 
+  --header-footer-min-height: 668px;
   --page-gap: 40px;
   --content-gap: 50px;
   --section-gap: 20px;
@@ -40,7 +41,8 @@
 @media (768px <= width < 1024px) {
 
   :root {
-    --page-title-font-size: 120px;
+    --header-footer-min-height: 1024px;
+    --page-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --page-gap: 60px;
     --content-gap: 80px;
   }
@@ -49,8 +51,9 @@
 /* desktop 👇🏻 */
 
 @media (1024px <= width) {
-  
+
   :root {
+    --header-footer-min-height: 768px;
     --page-title-font-size: 157px;
     --page-gap: 60px;
     --content-gap: 80px;
