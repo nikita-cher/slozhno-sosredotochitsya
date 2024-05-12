@@ -16,7 +16,7 @@
 
   /* layout 👇🏻 */
 
-  --header-footer-min-height: 668px;
+  --decorated-min-height: 668px;
   --page-gap: 40px;
   --content-gap: 50px;
   --section-gap: 20px;
@@ -38,10 +38,10 @@
 
 /* tablet 👇🏻 */
 
-@media (768px <= width < 1024px) {
+@media (width >= 768px) {
 
   :root {
-    --header-footer-min-height: 1024px;
+    --decorated-min-height: 1024px;
     --page-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --page-gap: 60px;
     --content-gap: 80px;
@@ -50,12 +50,9 @@
 
 /* desktop 👇🏻 */
 
-@media (1024px <= width) {
+@media (width >= 1024px) {
 
   :root {
-    --header-footer-min-height: 768px;
-    --page-title-font-size: 157px;
-    --page-gap: 60px;
-    --content-gap: 80px;
+    --decorated-min-height: 768px;
   }
 }
