@@ -58,7 +58,9 @@ function scripts() {
 }
 
 function images() {
-  return gulp.src('src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}')
+  return gulp.src('src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}', {
+    encoding: false
+  })
     .pipe(gulp.dest('dist/images'))
     .pipe(browserSync.reload({stream: true}));
 }
