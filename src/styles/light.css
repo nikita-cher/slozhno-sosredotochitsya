@@ -1,7 +1,7 @@
 @media (prefers-color-scheme: light) {
 
   :root {
-    --page-bg: #FFF1F7 url('../images/cover-image-light.png');
+    --page-bg: #FFF1F7 url('./images/cover-image-light.png');
     --accent-color: #353430;
     --button-effect-color: rgb(50 49 45 / .4);
     --page-title-color: #FFC2E6;
@@ -17,7 +17,7 @@
 }
 
 .page.theme_light {
-  --page-bg: #FFF1F7 url('../images/cover-image-light.png');
+  --page-bg: #FFF1F7 url('./images/cover-image-light.png');
   --accent-color: #353430;
   --button-effect-color: rgb(50 49 45 / .4);
   --page-title-color: #FFC2E6;

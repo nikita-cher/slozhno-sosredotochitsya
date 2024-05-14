@@ -1,7 +1,7 @@
 @media (prefers-color-scheme: dark) {
 
   :root {
-    --page-bg: #000028 url('../images/cover-image-dark.png');
+    --page-bg: #000028 url('./images/cover-image-dark.png');
     --accent-color: #FF0070;
     --button-effect-color: rgb(255 0 112 / .4);
     --page-title-color: #DB00FF;
@@ -13,7 +13,7 @@
 }
 
 .page.theme_dark {
-    --page-bg: #000028 url('../images/cover-image-dark.png');
+    --page-bg: #000028 url('./images/cover-image-dark.png');
     --accent-color: #FF0070;
     --button-effect-color: rgb(255 0 112 / .4);
     --page-title-color: #DB00FF;
